@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pablo Henrique — Desenvolvedor freelancer especializado em sites rápidos e sob medida. Crio sites modernos, responsivos e personalizados para empresas, profissionais e projetos.">
+  <meta name="theme-color" content="#0a0a0a">
+  <title>Pablo Henrique — Desenvolvedor Web</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#" class="nav__logo" aria-label="Início">
+        <span class="nav__logo-bracket">&lt;</span>pablo<span class="nav__logo-accent">.</span><span class="nav__logo-bracket">/&gt;</span>
+      </a>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#sobre" class="nav__link">Sobre</a></li>
+        <li><a href="#projetos" class="nav__link">Projetos</a></li>
+        <li><a href="#servicos" class="nav__link">Serviços</a></li>
+        <li><a href="#contato" class="nav__link nav__link--cta">Contato</a></li>
+      </ul>
+      <button class="nav__toggle" id="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero" id="hero">
+    <div class="hero__inner">
+      <p class="hero__location">Betim, MG</p>
+      <h1 class="hero__title">
+        <span class="hero__title-line hero__title-line--1" data-animate="fade-up">Seu negócio merece</span>
+        <span class="hero__title-line hero__title-line--2" data-animate="fade-up" data-delay="100">
+          um site <span class="text-accent">à altura</span>.
+        </span>
+      </h1>
+      <p class="hero__subtitle" data-animate="fade-up" data-delay="200">
+        Crio sites modernos, responsivos e personalizados para empresas, profissionais e projetos.
+      </p>
+      <div class="hero__actions" data-animate="fade-up" data-delay="300">
+        <a href="#projetos" class="btn btn--primary">Ver projetos</a>
+        <a href="#contato" class="btn btn--ghost">Fale comigo</a>
+      </div>
+    </div>
+    <div class="hero__scroll" data-animate="fade-up" data-delay="400">
+      <span>scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </header>
+
+  <!-- About -->
+  <section class="section" id="sobre">
+    <div class="section__inner">
+      <div class="section__header" data-animate="fade-up">
+        <span class="section__number">01</span>
+        <h2 class="section__title">Sobre mim</h2>
+      </div>
+      <div class="about" data-animate="fade-up" data-delay="100">
+        <div class="about__text">
+          <p>
+            Sou Pablo Henrique, desenvolvedor web freelancer baseado em Betim/MG.
+            Trabalho criando sites que funcionam de verdade — rápidos, responsivos e
+            pensados para atender o objetivo de quem encomenda.
+          </p>
+          <p>
+            Minha abordagem é direta: entender o que o cliente precisa, escolher a solução
+            certa e entregar com qualidade. Crio projetos com HTML, CSS e JavaScript puro,
+            sem dependências desnecessárias, porque acredito que código limpo e leve é a
+            base de qualquer bom site.
+          </p>
+          <p>
+            Estou em constante evolução, sempre buscando aprender novas tecnologias e
+            aprimorar minha prática. Cada projeto é uma oportunidade de crescer
+            tecnicamente e de ajudar alguém a ter presença digital com qualidade.
+          </p>
+        </div>
+        <div class="about__details">
+          <div class="about__detail">
+            <span class="about__detail-label">Localização</span>
+            <span class="about__detail-value">Betim, MG — Brasil</span>
+          </div>
+          <div class="about__detail">
+            <span class="about__detail-label">Área</span>
+            <span class="about__detail-value">Desenvolvimento Web Freelancer</span>
+          </div>
+          <div class="about__detail">
+            <span class="about__detail-label">Foco</span>
+            <span class="about__detail-value">Sites institucionais, landing pages e interfaces web personalizadas</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="section section--alt" id="projetos">
+    <div class="section__inner">
+      <div class="section__header" data-animate="fade-up">
+        <span class="section__number">02</span>
+        <h2 class="section__title">Projetos</h2>
+      </div>
+      <p class="section__description" data-animate="fade-up" data-delay="50">
+        Projetos reais, com código real. Cada um representa um desafio diferente resolvido.
+      </p>
+
+      <div class="projects">
+        <!-- Project: Street League -->
+        <article class="project-card" data-animate="fade-up" data-delay="100">
+          <div class="project-card__image">
+            <div class="project-card__placeholder">
+              <span>SL</span>
+            </div>
+          </div>
+          <div class="project-card__content">
+            <div class="project-card__tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">Node.js</span>
+            </div>
+            <h3 class="project-card__title">Street League</h3>
+            <p class="project-card__description">
+              Plataforma para organização de campeonatos de rua. Sistema completo com
+              gerenciamento de times, jogos e classificações em tempo real.
+            </p>
+            <div class="project-card__links">
+              <a href="https://github.com/pablohxs" class="project-card__link" target="_blank" rel="noopener noreferrer">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0016 8c0-4.42-3.58-8-8-8z" fill="currentColor"/></svg>
+                Código
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Placeholder para futuros projetos -->
+        <div class="project-card project-card--empty" data-animate="fade-up" data-delay="200">
+          <div class="project-card__content">
+            <p class="project-card__empty-text">
+              Novos projetos em breve. Cada página nova é um passo na evolução do meu trabalho.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="section" id="servicos">
+    <div class="section__inner">
+      <div class="section__header" data-animate="fade-up">
+        <span class="section__number">03</span>
+        <h2 class="section__title">Serviços</h2>
+      </div>
+      <p class="section__description" data-animate="fade-up" data-delay="50">
+        O que posso fazer para o seu projeto.
+      </p>
+
+      <div class="services" data-animate="fade-up" data-delay="100">
+        <div class="service">
+          <div class="service__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <h3 class="service__title">Sites Institucionais</h3>
+          <p class="service__description">
+            Páginas que apresentam sua empresa ou atividade com clareza. Design profissional,
+            conteúdo organizado e presença digital sólida.
+          </p>
+        </div>
+
+        <div class="service">
+          <div class="service__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+          </div>
+          <h3 class="service__title">Landing Pages</h3>
+          <p class="service__description">
+            Páginas focadas em conversão. Layout pensado para guiar o visitante à ação
+            que você precisa — contato, inscrição, compra.
+          </p>
+        </div>
+
+        <div class="service">
+          <div class="service__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          </div>
+          <h3 class="service__title">Sites para Profissionais</h3>
+          <p class="service__description">
+            Portfólios e sites pessoais que comunicam quem você é e o que faz.
+            Ideal para autônomos, freelancers e profissionais liberais.
+          </p>
+        </div>
+
+        <div class="service">
+          <div class="service__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </div>
+          <h3 class="service__title">Interfaces Web Personalizadas</h3>
+          <p class="service__description">
+            Desenvolvimento de interfaces sob medida, com foco em experiência do
+            usuário, performance e código limpo.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technologies -->
+  <section class="section section--alt" id="tecnologias">
+    <div class="section__inner">
+      <div class="section__header" data-animate="fade-up">
+        <span class="section__number">04</span>
+        <h2 class="section__title">Tecnologias</h2>
+      </div>
+
+      <div class="tech" data-animate="fade-up" data-delay="100">
+        <div class="tech__group">
+          <h3 class="tech__group-title">Desenvolvimento</h3>
+          <div class="tech__items">
+            <div class="tech__item">
+              <span class="tech__item-name">HTML</span>
+            </div>
+            <div class="tech__item">
+              <span class="tech__item-name">CSS</span>
+            </div>
+            <div class="tech__item">
+              <span class="tech__item-name">JavaScript</span>
+            </div>
+            <div class="tech__item">
+              <span class="tech__item-name">Node.js</span>
+            </div>
+            <div class="tech__item">
+              <span class="tech__item-name">C</span>
+            </div>
+            <div class="tech__item">
+              <span class="tech__item-name">Python</span>
+              <span class="tech__item-badge">aprendendo</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tech__group">
+          <h3 class="tech__group-title">Ferramentas</h3>
+          <div class="tech__items">
+            <div class="tech__item">
+              <span class="tech__item-name">Git</span>
+            </div>
+            <div class="tech__item">
+              <span class="tech__item-name">GitHub</span>
+            </div>
+            <div class="tech__item">
+              <span class="tech__item-name">VS Code</span>
+            </div>
+            <div class="tech__item">
+              <span class="tech__item-name">Cloudflare</span>
+            </div>
+            <div class="tech__item">
+              <span class="tech__item-name">Netlify</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section" id="contato">
+    <div class="section__inner">
+      <div class="section__header" data-animate="fade-up">
+        <span class="section__number">05</span>
+        <h2 class="section__title">Contato</h2>
+      </div>
+      <p class="section__description" data-animate="fade-up" data-delay="50">
+        Tem um projeto em mente ou quer conversar? Me manda uma mensagem.
+      </p>
+
+      <div class="contact" data-animate="fade-up" data-delay="100">
+        <div class="contact__form-wrapper">
+          <div data-fs-success class="form-message form-message--success">Mensagem enviada com sucesso! Em breve entro em contato.</div>
+          <div data-fs-error class="form-message form-message--error"></div>
+          <form class="contact__form" id="contact-form" action="https://formspree.io/f/xvkoqqwo" method="POST">
+            <div class="form-group">
+              <label for="name" class="form-label">Nome</label>
+              <input type="text" id="name" name="name" class="form-input" required autocomplete="name" data-fs-field>
+              <span class="form-error" data-fs-error="name"></span>
+            </div>
+            <div class="form-group">
+              <label for="email" class="form-label">E-mail</label>
+              <input type="email" id="email" name="email" class="form-input" required autocomplete="email" data-fs-field>
+              <span class="form-error" data-fs-error="email"></span>
+            </div>
+            <div class="form-group">
+              <label for="message" class="form-label">Mensagem</label>
+              <textarea id="message" name="message" class="form-input form-input--textarea" rows="5" required data-fs-field></textarea>
+              <span class="form-error" data-fs-error="message"></span>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full" data-fs-submit-btn>
+              <span class="btn__text">Enviar mensagem</span>
+              <span class="btn__loading" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="6" stroke="currentColor" stroke-width="2" stroke-dasharray="28" stroke-dashoffset="8"/></svg>
+              </span>
+              <span class="btn__success" aria-hidden="true">Enviado!</span>
+            </button>
+          </form>
+        </div>
+
+        <div class="contact__info">
+          <a href="mailto:pablohxs.dev@gmail.com" class="contact__email">pablohxs.dev@gmail.com</a>
+
+          <div class="contact__links">
+            <a href="https://github.com/pablohxs" class="contact__link" target="_blank" rel="noopener noreferrer">
+              <svg width="20" height="20" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+              GitHub
+            </a>
+            <a href="https://www.instagram.com/pablohxs.dev/" class="contact__link" target="_blank" rel="noopener noreferrer">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              Instagram
+            </a>
+            <a href="#" class="contact__link contact__link--disabled" aria-label="LinkedIn (em breve)">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              LinkedIn
+              <span class="contact__link-badge">em breve</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <span class="footer__copy">&copy; 2026 Pablo Henrique. Todos os direitos reservados.</span>
+      <span class="footer__build">Feito com HTML, CSS e JS puro.</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    window.formspree = window.formspree || function () { (formspree.q = formspree.q || []).push(arguments); };
+    formspree('initForm', { formElement: '#contact-form', formId: 'xvkoqqwo' });
+  </script>
+  <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
+</body>
+</html>
