@@ -73,8 +73,4 @@ probably playing resident evil
   <a href="https://open.spotify.com/user/31z5fgpofxprroweorcz63losv2a">
     <img src="https://img.shields.io/badge/spotify-111111?style=for-the-badge&logo=spotify&logoColor=white"/>
   </a>
-
-  <a href="https://steamcommunity.com/profiles/76561199174902154/">
-    <img src="https://img.shields.io/badge/steam-111111?style=for-the-badge&logo=steam&logoColor=white"/>
-  </a>
 </p>
