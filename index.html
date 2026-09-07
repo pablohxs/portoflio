@@ -318,7 +318,60 @@
   <script src="js/main.js"></script>
   <script>
     window.formspree = window.formspree || function () { (formspree.q = formspree.q || []).push(arguments); };
-    formspree('initForm', { formElement: '#contact-form', formId: 'xvkoqqwo' });
+    formspree('initForm', {
+      formElement: '#contact-form',
+      formId: 'xvkoqqwo',
+      useDefaultStyles: false,
+      disable: function (ctx) {
+        var btn = ctx.form.querySelector('[data-fs-submit-btn]');
+        if (btn) {
+          btn.disabled = true;
+          btn.classList.add('btn--loading');
+        }
+      },
+      enable: function (ctx) {
+        var btn = ctx.form.querySelector('[data-fs-submit-btn]');
+        if (btn) {
+          btn.disabled = false;
+          btn.classList.remove('btn--loading');
+        }
+      },
+      onSuccess: function (ctx) {
+        var btn = ctx.form.querySelector('[data-fs-submit-btn]');
+        if (btn) {
+          btn.classList.remove('btn--loading');
+          btn.classList.add('btn--success');
+          setTimeout(function () {
+            btn.classList.remove('btn--success');
+          }, 4000);
+        }
+        ctx.form.reset();
+      },
+      onError: function (ctx) {
+        var btn = ctx.form.querySelector('[data-fs-submit-btn]');
+        if (btn) {
+          btn.classList.remove('btn--loading');
+        }
+        var errEl = ctx.form.parentElement.querySelector('[data-fs-error]');
+        if (errEl) {
+          var text = errEl.textContent || '';
+          if (!text || text.includes('error occurred') || text.includes('error submitting')) {
+            errEl.textContent = 'Ocorreu um erro ao enviar a mensagem. Por favor, tente novamente.';
+          }
+        }
+      },
+      onFailure: function (ctx) {
+        var btn = ctx.form.querySelector('[data-fs-submit-btn]');
+        if (btn) {
+          btn.classList.remove('btn--loading');
+        }
+        var errEl = ctx.form.parentElement.querySelector('[data-fs-error]');
+        if (errEl) {
+          errEl.textContent = 'Ocorreu um erro ao enviar a mensagem. Por favor, tente novamente.';
+          errEl.setAttribute('data-fs-active', '');
+        }
+      }
+    });
   </script>
   <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
 </body>
